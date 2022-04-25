@@ -1,15 +1,14 @@
 import styled from "styled-components";
 
 export const PostContainer = styled.div`
-  margin: 20px;
   padding: 20px;
-  border-left: 3px solid lightgray;
-  border-right: 3px solid lightgray;
+  border-left: 3px solid whitesmoke;
+  border-right: 3px solid whitesmoke;
 `;
 
 export const PostCard = styled.div`
   display: flex;
-  border-bottom: 2px solid lightgray;
+  border-bottom: 2px solid whitesmoke;
 `;
 
 export const ProfilePicture = styled.img`

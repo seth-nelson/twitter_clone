@@ -7,7 +7,7 @@ export const MainContainer = styled.div`
 export const UserContainer = styled.div`
   display: flex;
   margin: 10px;
-  border-bottom: 1px solid lightgray;
+  border-bottom: 1px solid whitesmoke;
 `;
 
 export const ProfilePicture = styled.img`
