@@ -15,43 +15,43 @@ export default function SideBar() {
     <SidebarContainer>
       <NavLink>
         <Icon>
-          <BiHome size="32px" color="skyBlue" />
+          <BiHome size="28px" color="skyBlue" />
         </Icon>
         <h2>Home</h2>
       </NavLink>
       <NavLink>
         <Icon>
-          <BiHash size="32px" color="skyBlue" />
+          <BiHash size="28px" color="skyBlue" />
         </Icon>
         <h2>Explore</h2>
       </NavLink>
       <NavLink>
         <Icon>
-          <BiBell size="32px" color="skyBlue" />
+          <BiBell size="28px" color="skyBlue" />
         </Icon>
         <h2>Notifications</h2>
       </NavLink>
       <NavLink>
         <Icon>
-          <BiEnvelope size="32px" color="skyBlue" />
+          <BiEnvelope size="28px" color="skyBlue" />
         </Icon>
         <h2>Messages</h2>
       </NavLink>
       <NavLink>
         <Icon>
-          <BiTag size="32px" color="skyBlue" />
+          <BiTag size="28px" color="skyBlue" />
         </Icon>
         <h2>Bookmarks</h2>
       </NavLink>
       <NavLink>
         <Icon>
-          <BsPerson size="32px" color="skyBlue" />
+          <BsPerson size="28px" color="skyBlue" />
         </Icon>
         <h2>Profile</h2>
       </NavLink>
       <NavLink>
         <Icon>
-          <CgMoreO size="32px" color="skyBlue" />
+          <CgMoreO size="28px" color="skyBlue" />
         </Icon>
         <h2>More</h2>
       </NavLink>

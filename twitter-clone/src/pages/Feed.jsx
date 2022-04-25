@@ -67,7 +67,6 @@ export default function Feed() {
           </PostCard>
         );
       })}
-      ;
     </PostContainer>
   );
 }

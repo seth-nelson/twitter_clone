@@ -2,6 +2,9 @@ import styled from "styled-components";
 
 export const PostContainer = styled.div`
   margin: 20px;
+  padding: 20px;
+  border-left: 3px solid lightgray;
+  border-right: 3px solid lightgray;
 `;
 
 export const PostCard = styled.div`

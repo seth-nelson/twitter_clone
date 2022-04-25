@@ -7,6 +7,7 @@ export const HeaderContainer = styled.div`
   width: 100%;
   height: 80px;
   margin: 20px;
+  border-bottom: 3px solid lightgray;
 `;
 
 export const HeaderItem = styled.div``;

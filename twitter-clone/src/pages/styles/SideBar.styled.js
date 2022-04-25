@@ -1,15 +1,13 @@
 import styled from "styled-components";
 
-export const SidebarContainer = styled.div`
-  border-right: 3px solid lightgray;
-`;
+export const SidebarContainer = styled.div``;
 
 export const NavLink = styled.div`
   display: flex;
   justify-content: left;
   align-items: center;
   margin: 5px 20px;
-  font-size: 16px;
+  font-size: 12px;
 `;
 
 export const Icon = styled.div`
@@ -24,12 +22,13 @@ export const TweetButton = styled.div`
   justify-content: center;
   align-items: center;
   height: 40px;
-  width: 150px;
-  border-radius: 12px;
+  width: 100%;
+  border-radius: 20px;
   font-size: 20px;
   font-weight: 600;
   background-color: skyblue;
   text-align: center;
+  margin: 10px;
   &:hover {
     cursor: pointer;
     opacity: 70%;

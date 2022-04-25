@@ -1,3 +1,5 @@
+import logo from "../../logo.svg";
+
 export default function getUsers() {
   return [
     {
@@ -5,6 +7,7 @@ export default function getUsers() {
       firstName: "Johnny",
       lastName: "Johnson",
       description: "I love horror films!",
+      image: logo,
       location: {
         city: "Austin",
         state: "Texas",
@@ -18,6 +21,7 @@ export default function getUsers() {
       firstName: "Crystal",
       lastName: "Mason",
       description: "I enjoy learning about marine mammals.",
+      image: logo,
       location: {
         city: "Orlando",
         state: "Florida",
@@ -31,6 +35,7 @@ export default function getUsers() {
       firstName: "Stanley",
       lastName: "Schneller",
       description: "Finance is what I live and breathe.",
+      image: logo,
       location: {
         city: "New York",
         state: "New York",
@@ -44,6 +49,7 @@ export default function getUsers() {
       firstName: "Terry",
       lastName: "Bradshaw",
       description: "I build and race cars. Let's get in touch",
+      image: logo,
       location: {
         city: "Los Angeles",
         state: "California",
@@ -57,6 +63,7 @@ export default function getUsers() {
       firstName: "Elizabeth",
       lastName: "Stanton",
       description: "Passionate about the law",
+      image: logo,
       location: {
         city: "Phoenix",
         state: "Arizona",
