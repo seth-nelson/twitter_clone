@@ -4,6 +4,14 @@ export const MainContainer = styled.div`
   margin: 10px;
 `;
 
+export const Following = styled.div`
+  text-align: left;
+  margin: 40px;
+  font-size: 24px;
+  font-weight: 600;
+  color: lightgray;
+`;
+
 export const UserContainer = styled.div`
   display: flex;
   margin: 10px;

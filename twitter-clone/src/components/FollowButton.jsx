@@ -1,11 +1,18 @@
 import React, { useState } from "react";
 import { Button } from "./styles/FollowButton.styled";
 
-export default function FollowButton() {
+export default function FollowButton(props) {
   const [isFollowing, setIsFollowing] = useState(false);
+  const { handleFollowerCount } = props;
 
   const toggleFollow = () => {
-    isFollowing ? setIsFollowing(false) : setIsFollowing(true);
+    if (isFollowing) {
+      setIsFollowing(false);
+      handleFollowerCount(false);
+    } else {
+      setIsFollowing(true);
+      handleFollowerCount(true);
+    }
   };
 
   return (
