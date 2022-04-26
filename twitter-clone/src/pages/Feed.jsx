@@ -1,6 +1,5 @@
 import React, { useEffect, useState } from "react";
 import {
-  PostContainer,
   PostCard,
   ProfilePicture,
   ContentSection,
@@ -9,6 +8,7 @@ import {
   AccountName,
   Tweet,
 } from "./styles/Feed.styled";
+import { CenterContainer } from "./styles/Container.styled";
 import { BsDot } from "react-icons/bs";
 import getPosts from "../api/local-data/getPosts";
 import TweetActionBar from "./feed/TweetActionBar";
@@ -32,10 +32,10 @@ export default function Feed() {
   //   };
 
   return (
-    <PostContainer>
+    <CenterContainer>
       {posts.map((post, key) => {
         return (
-          <PostCard key={key}>
+          <PostCard data-testid="posts" key={key}>
             <div>
               <ProfilePicture src={post.image} alt="profile" />
             </div>
@@ -67,6 +67,6 @@ export default function Feed() {
           </PostCard>
         );
       })}
-    </PostContainer>
+    </CenterContainer>
   );
 }

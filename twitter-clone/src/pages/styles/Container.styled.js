@@ -11,3 +11,9 @@ export const MainContainerItem = styled.div`
   text-align: center;
   overflow: auto;
 `;
+
+export const CenterContainer = styled.div`
+  padding: 20px;
+  border-left: 3px solid whitesmoke;
+  border-right: 3px solid whitesmoke;
+`;

@@ -1,11 +1,5 @@
 import styled from "styled-components";
 
-export const PostContainer = styled.div`
-  padding: 20px;
-  border-left: 3px solid whitesmoke;
-  border-right: 3px solid whitesmoke;
-`;
-
 export const PostCard = styled.div`
   display: flex;
   border-bottom: 2px solid whitesmoke;

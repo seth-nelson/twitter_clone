@@ -17,7 +17,11 @@ export default function FollowButton(props) {
 
   return (
     <>
-      <Button isFollowing={isFollowing} onClick={() => toggleFollow()}>
+      <Button
+        data-testid="follow-button"
+        isFollowing={isFollowing}
+        onClick={() => toggleFollow()}
+      >
         {isFollowing ? "Following" : "Follow"}
       </Button>
     </>

@@ -27,13 +27,14 @@ function App() {
             </MainContainerItem>
             <MainContainerItem>
               <Routes>
-                <Route path="/" component={<Feed />} />
-                <Route path="/explore" component={<Explore />} />
-                <Route path="/notifications" component={<Notifications />} />
-                <Route path="/messages" component={<Messages />} />
-                <Route path="/bookmarks" component={<Bookmarks />} />
-                <Route path="/profile" component={<Profile />} />
-                <Route path="/more" component={<More />} />
+                <Route path="/" element={<Feed />} />
+                <Route path="/explore" element={<Explore />} />
+                <Route path="/notifications" element={<Notifications />} />
+                <Route path="/messages" element={<Messages />} />
+                <Route path="/bookmarks" element={<Bookmarks />} />
+                <Route path="/profile" element={<Profile />} />
+                <Route path="/more" element={<More />} />
+                <Route />
               </Routes>
             </MainContainerItem>
             <MainContainerItem>
