@@ -1,25 +1,43 @@
-import React, { useState } from "react";
-import { ActionBarContainer } from "./styles/TweetActionBar.styled";
+import React, { useEffect, useState } from "react";
+import {
+  MainContainer,
+  ActionBarContainer,
+  LikesNumber,
+} from "./styles/TweetActionBar.styled";
 import { BiComment, BiHeart } from "react-icons/bi";
 import { FiShare } from "react-icons/fi";
 import { FaHeart } from "react-icons/fa";
 
-export default function TweetActionBar() {
+export default function TweetActionBar(props) {
   const [isLiked, setIsLiked] = useState(false);
+  const [likes, setLikes] = useState(0);
+
+  useEffect(() => {
+    setLikes(props.likes);
+  }, [props]);
 
   const toggleLike = () => {
-    isLiked ? setIsLiked(false) : setIsLiked(true);
+    if (isLiked) {
+      setIsLiked(false);
+      setLikes(likes - 1);
+    } else {
+      setIsLiked(true);
+      setLikes(likes + 1);
+    }
   };
 
   return (
-    <ActionBarContainer>
-      <BiComment size="16px" color="gray" />
-      <FiShare size="16px" color="gray" />
-      {isLiked ? (
-        <FaHeart size="16px" color="red" onClick={() => toggleLike()} />
-      ) : (
-        <BiHeart size="16px" color="gray" onClick={() => toggleLike()} />
-      )}
-    </ActionBarContainer>
+    <MainContainer>
+      <ActionBarContainer>
+        <BiComment size="16px" color="gray" />
+        <FiShare size="16px" color="gray" />
+        {isLiked ? (
+          <FaHeart size="16px" color="red" onClick={() => toggleLike()} />
+        ) : (
+          <BiHeart size="16px" color="gray" onClick={() => toggleLike()} />
+        )}
+      </ActionBarContainer>
+      <LikesNumber>{likes}</LikesNumber>
+    </MainContainer>
   );
 }

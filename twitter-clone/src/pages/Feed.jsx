@@ -61,7 +61,7 @@ export default function Feed() {
                 </div>
               </ContentSection>
               <div>
-                <TweetActionBar />
+                <TweetActionBar likes={post.likes} />
               </div>
             </section>
           </PostCard>
