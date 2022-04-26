@@ -32,12 +32,22 @@ export default function TweetActionBar(props) {
         <BiComment size="16px" color="gray" />
         <FiShare size="16px" color="gray" />
         {isLiked ? (
-          <FaHeart size="16px" color="red" onClick={() => toggleLike()} />
+          <FaHeart
+            data-testid="toggledLikeIcon"
+            size="16px"
+            color="red"
+            onClick={() => toggleLike()}
+          />
         ) : (
-          <BiHeart size="16px" color="gray" onClick={() => toggleLike()} />
+          <BiHeart
+            data-testid="untoggledIcon"
+            size="16px"
+            color="gray"
+            onClick={() => toggleLike()}
+          />
         )}
       </ActionBarContainer>
-      <LikesNumber>{likes}</LikesNumber>
+      <LikesNumber data-testid="numLikes">{likes}</LikesNumber>
     </MainContainer>
   );
 }

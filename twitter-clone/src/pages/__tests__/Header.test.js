@@ -4,6 +4,7 @@ import Header from "../Header";
 describe("Rendering the Header content", () => {
   it("should display the app logo", () => {
     render(<Header />);
+    // screen.debug();
 
     const appLogo = screen.getByTestId("chirp_logo");
     expect(appLogo).toBeVisible();

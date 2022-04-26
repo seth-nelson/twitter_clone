@@ -21,7 +21,7 @@ export default function getPosts() {
       message: `Lorem ipsum dolor sit amet, consectetur adipiscing elit.`,
       firstName: "Stanley",
       accountName: "mr_investor",
-      likes: 100,
+      likes: 525,
     },
     {
       image: logo,
@@ -77,7 +77,7 @@ export default function getPosts() {
       message: `Lorem ipsum dolor sit amet.`,
       firstName: "Terry",
       accountName: "all_cylinders_racing",
-      likes: 255,
+      likes: 1000,
     },
     {
       image: logo,
